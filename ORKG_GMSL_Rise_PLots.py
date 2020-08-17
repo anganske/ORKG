@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Aug  7 15:10:44 2020
-ORKG PLotprogramm: liest Daten aus ORKG Comparison und macht Plot
+ORKG PLotprogramm: reads data from ORKG comparisons and makes a simple plot 
+scenario, time_end and id of comparison have to be chosen and written into the variables scenario, time_end and com_id.
 @author: GanskeA
 """
 
@@ -22,7 +23,7 @@ scenario='RCP4.5'
 time_end='2050'
 com_id='R48404'
 p_title='Projected GMSL '+time_end+ ' compared to 2000, '+scenario
-pf_name='Bilder/GMSL_Rise_'+time_end+'_'+scenario+'.png'
+pf_name='GMSL_Rise_'+time_end+'_'+scenario+'.png'
 
 # read numbers from ORKG
 orkg = ORKG(host='https://orkg.org/orkg', simcomp_host='https://orkg.org/orkg/simcomp') 
